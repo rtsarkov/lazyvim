@@ -1,0 +1,21 @@
+-- ~/.config/nvim/lua/plugins/neo-tree.lua
+return {
+  "nvim-neo-tree/neo-tree.nvim",
+  version = "*",
+  opts = {
+    filesystem = {
+      filtered_items = {
+        hide_dotfiles = false,    -- показывать dotfiles
+        hide_gitignored = false,  -- показывать gitignored файлы
+        hide_hidden = false,      -- показывать скрытые системные файлы
+      },
+      follow_current_file = true,
+      use_libuv_file_watcher = true,
+    },
+    window = {
+      width = 35,
+    },
+  },
+}
+
+
