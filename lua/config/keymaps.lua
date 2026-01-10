@@ -5,3 +5,6 @@
 -- vim.keymap.del("n", "<leader>e")
 
 -- vim.keymap.set("n", "<leader>e", "<Cmd>Neotree<CR>", { desc = "Neotree" })
+
+-- vim.keymap.set({ "i", "c" }, "<C-j>", "<C-n>", { desc = "Next item" })
+-- vim.keymap.set({ "i", "c" }, "<C-k>", "<C-p>", { desc = "Previous item" })

@@ -1,23 +1,23 @@
 return {
-  "snacks.nvim",
-  opts = {
-    picker = {
-      hidden = true, -- for hidden files
-      ignored = true, -- for .gitignore files
-    },
-    dashboard = {
-      preset = {
-        pick = function(cmd, opts)
-          return LazyVim.pick(cmd, opts)()
-        end,
-        header = [[
-         __                  __             
-   _____/ /__________ ______/ /______ _   __
-  / ___/ __/ ___/ __ `/ ___/ //_/ __ \ | / /
- / /  / /_(__  ) /_/ / /  / ,< / /_/ / |/ / 
-/_/   \__/____/\__,_/_/  /_/|_|\____/|___/  
-                                             
- ]],
+    "snacks.nvim",
+    opts = {
+        picker = {
+            hidden = true, -- for hidden files
+            ignored = true, -- for .gitignore files
+        },
+        dashboard = {
+            preset = {
+                pick = function(cmd, opts)
+                    return LazyVim.pick(cmd, opts)()
+                end,
+                header = [[
+      ██████╗ ████████╗███████╗ █████╗ ██████╗ ██╗  ██╗ ██████╗ ██╗   ██╗
+      ██╔══██╗╚══██╔══╝██╔════╝██╔══██╗██╔══██╗██║ ██╔╝██╔═══██╗██║   ██║
+      ██████╔╝   ██║   ███████╗███████║██████╔╝█████╔╝ ██║   ██║██║   ██║
+      ██╔══██╗   ██║   ╚════██║██╔══██║██╔══██╗██╔═██╗ ██║   ██║╚██╗ ██╔╝
+      ██║  ██║   ██║   ███████║██║  ██║██║  ██║██║  ██╗╚██████╔╝ ╚████╔╝ 
+      ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝   ╚═══╝  
+      ]],
         -- stylua: ignore
         ---@type snacks.dashboard.Item[]
         keys = {
@@ -31,7 +31,7 @@ return {
           { icon = "󰒲 ", key = "l", desc = "Lazy", action = ":Lazy" },
           { icon = " ", key = "q", desc = "Quit", action = ":qa" },
         },
-      },
+            },
+        },
     },
-  },
 }
